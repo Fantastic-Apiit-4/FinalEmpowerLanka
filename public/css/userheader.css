@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-weight: 500;
+}
+
+:root{
+    --textcolor: rgb(77, 78, 78);
+    --bgwhite:rgb(125, 180, 231);
+    --btnpurple:rgb(112, 40, 92);
+    --navbar:#9059d8;
+
+    --border_radius: 2rem;
+    --card_border_radius: 1rem;
+    --button_padding:0.3rem 2rem;
+    --card_padding:1rem;
+    --sticky_top_left:5.4rem;
+    --sticky_top_right:-18rem;
+}
+
+.m-container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.nav-item{
+    color: white;
+}
+.m-profpic{
+    width: 2.2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+img{
+    display: block;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+nav{
+    width: 100%;
+    background-color:var(--navbar);
+    padding: 0.2rem 0;
+    position: fixed;
+   
+    top: 0;
+    z-index:10 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+nav .m-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .m-searchbar{
+    background-color: rgb(234, 235, 236);
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+}
+
+nav .m-searchbar input[type="search"]{
+    background: transparent;
+    width: 25vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: black;
+}
+nav .m-searchbar input[type="search"]::placeholder{
+    color: rgb(141, 141, 141);
+}
+
+nav .m-profile{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.m-logo{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    margin-top: 4px;
+    color: white;
+}
+.m-profile i{
+    font-size: 20px;
+    color: white;
+}

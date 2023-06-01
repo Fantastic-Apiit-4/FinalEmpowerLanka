@@ -1,0 +1,58 @@
+body::before {
+      background:url(../img/homebg.jpg);
+      background-size: cover;
+      content: '';   
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+  }
+  
+  nav{
+      background-color: #4a0e6a;
+      margin-top:0 ;
+  }
+  nav a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+  }
+  nav a:hover{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  .empnavbar{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .empowerlinks{
+    display: flex;
+    padding-left: 600px;
+    gap: 4rem;
+}
+
+  .loggeduserpic{
+      width: 3.1rem;
+      height: 3.1rem;
+      border-radius: 50%;
+      overflow: hidden;
+  
+  }
+  .loggeduserpic img{
+      display: block;
+      width: 100%;
+  }
+  .logo{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 200px;
+}
+  .linklabel{
+      cursor: pointer;
+  }

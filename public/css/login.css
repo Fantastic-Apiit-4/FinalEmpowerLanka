@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+}
+
+body,
+input {
+      font-family: "Poppins", sans-serif;
+}
+
+.row{
+      padding: 25px;
+}
+
+    
+    /* Create two equal columns that floats next to each other */
+    .column-left {
+      width: 50%;
+      height: 100%;
+      background-color: #2d1152;
+    }
+
+    .column-right {
+      width: 50%;
+      height: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    
+    
+    
+    .logo{
+
+          float: right;
+          cursor: pointer;
+          padding: 20px;
+    
+      }
+
+        .logo img{
+            width: 200px;
+        }
+
+      
+    
+    .forms-container {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+    }
+    
+    .signin-signup {
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          left: 75%;
+          width: 50%;
+          transition: 1s 0.7s ease-in-out;
+          display: grid;
+          grid-template-columns: 1fr;
+          z-index: 5;
+    }
+    
+    form {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0rem 5rem;
+          transition: all 0.2s 0.7s;
+          overflow: hidden;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+    }
+    
+    
+    form.sign-in-form {
+          z-index: 3;
+    }
+    
+    .title {
+          font-size: 3rem;
+          color: #2d1152;
+          margin-bottom: 20px;
+    }
+    
+    .input-field {
+          max-width: 450px;
+          width: 100%;
+          border: #2d1152 solid;
+          margin: 10px 0;
+          height: 55px;
+          border-radius: 10px;
+          display: grid;
+          grid-template-columns: 15% 85%;
+          padding: 0 0.4rem;
+          position: relative;
+    }
+    
+    .input-field i {
+          text-align: center;
+          line-height: 55px;
+          color: #2d1152;
+          transition: 0.5s;
+          font-size: 1.1rem;
+    }
+    
+    .input-field input {
+          background: none;
+          outline: none;
+          border: none;
+          line-height: 1;
+          font-weight: 600;
+          font-size: 1.1rem;
+          color: #2d1152;
+    }
+    
+    .input-field input::placeholder {
+          color: #9784af;
+          font-weight: 500;
+    }
+    
+    
+    .btn {
+          width: 180px;
+          background-color: #2d1152;
+          border: none;
+          outline: none;
+          height: 49px;
+          border-radius: 49px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin: 10px 0;
+          cursor: pointer;
+          font-size: 1.3rem;
+          letter-spacing: 2px;
+    }
+    
+    .btn:hover {
+          background-color: #fff;
+          color: #2d1152;
+          border: 3px solid #2d1152;
+    }
+
+.content {
+      color: #fff;
+      transition: transform 0.9s ease-in-out;
+      transition-delay: 0.6s;
+      text-align: center;
+}
+
+.content h3 {
+      font-weight: 600;
+      line-height: 1;
+      font-size: 1.5rem;
+      padding: 40px 0px 0px 0px;
+
+}
+
+.content p {
+      font-size: 0.95rem;
+      padding: 15px 80px;
+}
+
+.image {
+      width: 100%;
+      height: 100%;
+      padding: 5% 12% 5% 12%;
+
+}
+
+
+p{
+      font-size: 18px;
+      text-align: center;
+      margin-top: 10px;
+}
+
+a{
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+      .column-left{
+            visibility: hidden;
+      }
+
+      .signin-signup {
+            width: 100%;
+            top: 50%;
+      }
+}
